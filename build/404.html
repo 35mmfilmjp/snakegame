@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404 - ページが見つかりません</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+        color: #fff;
+      }
+
+      .container {
+        text-align: center;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        animation: pulse 2s infinite;
+      }
+
+      h1 {
+        font-size: 8rem;
+        margin: 0;
+        color: #4CAF50;
+        text-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+        animation: glitch 1s infinite;
+      }
+
+      .snake {
+        font-size: 3rem;
+        margin: 1rem 0;
+        color: #f44336;
+      }
+
+      p {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        color: #ddd;
+      }
+
+      .home-button {
+        display: inline-block;
+        padding: 1rem 2rem;
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+      }
+
+      .home-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+      }
+
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.02); }
+        100% { transform: scale(1); }
+      }
+
+      @keyframes glitch {
+        0% { text-shadow: 0 0 10px rgba(76, 175, 80, 0.5); }
+        25% { text-shadow: -2px 0 #4CAF50, 2px 2px #f44336; }
+        50% { text-shadow: 2px 0 #4CAF50, -2px -2px #f44336; }
+        75% { text-shadow: -2px 0 #4CAF50, 2px 2px #f44336; }
+        100% { text-shadow: 0 0 10px rgba(76, 175, 80, 0.5); }
+      }
+
+      .snake-animation {
+        position: relative;
+        width: 100px;
+        height: 20px;
+        margin: 2rem auto;
+      }
+
+      .snake-dot {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #4CAF50;
+        border-radius: 50%;
+        animation: move 2s infinite;
+      }
+
+      @keyframes move {
+        0% { left: 0; }
+        50% { left: calc(100% - 20px); }
+        100% { left: 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>404</h1>
+      <div class="snake">🐍</div>
+      <p>ヘビが餌を探している間にページが消えてしまいました...</p>
+      <div class="snake-animation">
+        <div class="snake-dot"></div>
+      </div>
+      <a href="/" class="home-button">ホームに戻る</a>
+    </div>
+  </body>
+</html>

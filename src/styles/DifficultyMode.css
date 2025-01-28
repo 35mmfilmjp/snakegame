@@ -1,0 +1,35 @@
+.difficulty-mode {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.difficulty-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.difficulty-tab {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.difficulty-tab.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.difficulty-tab:hover {
+  background-color: #e0e0e0;
+}
+
+.difficulty-tab.active:hover {
+  background-color: #1976D2;
+} 

@@ -1,0 +1,35 @@
+.game-modes {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.mode-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.mode-tab {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.mode-tab.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.mode-tab:hover {
+  background-color: #e0e0e0;
+}
+
+.mode-tab.active:hover {
+  background-color: #45a049;
+} 
